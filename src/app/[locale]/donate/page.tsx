@@ -88,7 +88,7 @@ export default function Donate() {
                       href="https://buy.stripe.com/dR66oueifggya3ubII"
                       target="_blank"
                     >
-                      <span className="flex cursor-pointer items-center gap-2 rounded-md bg-accent px-3 py-2 text-center font-semibold text-black">
+                      <span className="flex cursor-pointer items-center gap-2 rounded-md bg-accent px-3 py-2 text-center font-semibold text-white">
                         <FaDonate />
                         {t('donate.donate')}
                       </span>
@@ -119,7 +119,7 @@ export default function Donate() {
                       href="https://www.paypal.com/donate/?hosted_button_id=D8M92EYVFPSM6"
                       target="_blank"
                     >
-                      <span className="flex cursor-pointer items-center gap-2 rounded-md bg-accent px-3 py-2 text-center font-semibold text-black">
+                      <span className="flex cursor-pointer items-center gap-2 rounded-md bg-accent px-3 py-2 text-center font-semibold text-white">
                         <FaDonate />
                         {t('donate.donate')}
                       </span>
