@@ -16,7 +16,16 @@ const About = () => {
 
   return (
     <div className="flex flex-col items-center w-full">
-      <div className="w-full bg-gray-950 text-white pt-40 pb-12  flex flex-col items-center">
+      <div
+        className="w-full bg-gray-950 text-white pt-40 pb-12  flex flex-col items-center"
+        style={{
+          backgroundImage: 'url(/background-image.jpg)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundColor: 'rgba(0, 0, 0, 0.3)',
+          backgroundBlendMode: 'overlay'
+        }}
+      >
         <h1 className="text-sm md:text-xl font-extrabold flex items-center text-accent">
           {t('header.home')}
           <FaChevronRight className="mx-2  h-4 w-4" />
