@@ -48,10 +48,10 @@ export default function DailyVerse({
             customClassname="flex justify-center items-center"
           >
             <div className="text-left flex flex-col w-full">
-              <p className="text-md pb-0 font-semibold italic md:pb-1 md:text-xl">
+              <p className="text-xs pb-0 font-semibold italic md:pb-1 md:text-xl">
                 "{devotional.verse.text}"
               </p>
-              <span className="text-gray-300 flex justify-end">
+              <span className="text-gray-300 flex justify-end text-sm md:text-base">
                 "{devotional.verse.reference}"
               </span>
             </div>

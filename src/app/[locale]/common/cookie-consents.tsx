@@ -18,7 +18,7 @@ export default function CookieConsents() {
         transition={{ duration: 0.5 }}
       >
         <CookieConsent
-          buttonClasses="!bg-[#121212] !rounded-md !text-black !flex !font-semibold !justify-center !w-fit text-white !m-0 p-2 px-4"
+          buttonClasses="!bg-[#121212] !rounded-md !text-white !flex !font-semibold !justify-center !w-fit text-white !m-0 p-2 px-4"
           buttonText={t('agree')}
           containerClasses=" !bg-accent/[.7] p-8 relative flex !items-start gap-4 text-md md:text-lg backdrop-blur-md"
           contentClasses="!m-0 !p-0 flex items-start"

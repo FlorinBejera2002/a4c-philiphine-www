@@ -14,7 +14,7 @@ const About = () => {
 
   return (
     <section className="bg-white" id="/">
-      <div className="max-w-7xl mx-auto px-6 lg:px-12 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+      <div className="max-w-7xl mx-auto px-6 lg:px-12 grid grid-cols-1 md:grid-cols-2 gap-12 items-center py-8">
         <div className="flex flex-col gap-3">
           <InViewTransition delay={0}>
             <h3 className="text-sm font-semibold text-gray-500 tracking-wider uppercase">

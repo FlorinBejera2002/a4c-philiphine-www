@@ -37,7 +37,7 @@ export default function Projects() {
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4">
           {projectsData.map((project, index) => (
             <InViewTransition key={index} delay={0.5 + index * 0.25}>
-              <div className="bg-blue-50 p-4 rounded-lg h-64 shadow-md flex flex-col items-center text-center">
+              <div className="bg-blue-50 p-4 rounded-lg md:min-h-96 shadow-md flex flex-col items-center text-center">
                 <Image
                   src={project.image}
                   alt={t(`${project.translationKey}.title`)}

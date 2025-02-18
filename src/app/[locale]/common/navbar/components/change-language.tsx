@@ -5,7 +5,7 @@ import { motion } from 'framer-motion'
 import { useTranslations } from 'next-intl'
 import { usePathname, useRouter } from 'next/navigation'
 
-type Language = 'en' | 'ro'
+type Language = 'en' | 'fil'
 
 export default function ChangeLanguage({
   customClassname
@@ -20,17 +20,17 @@ export default function ChangeLanguage({
 
   const handleLocaleChange = useCallback(() => {
     if (language === 'en') {
-      router.push(pathname.replace('/ro', '/en'))
+      router.push(pathname.replace('/fil', '/en'))
 
       return
     }
-    router.push(pathname.replace('/en', '/ro'))
+    router.push(pathname.replace('/en', '/fil'))
   }, [language, pathname, router])
 
   const toggleSwitch = () => {
     setLanguage((prev) => {
       if (prev === 'en') {
-        return 'ro'
+        return 'fil'
       }
 
       return 'en'
@@ -66,12 +66,12 @@ export default function ChangeLanguage({
           language === 'en' ? 'text-white' : 'text-black'
         )}
       >
-        {t('language.ro')}
+        {t('language.fil')}
       </motion.div>
       <motion.div
         className={cn(
           'z-2 absolute right-[12px] mr-[1px] text-sm font-semibold',
-          language === 'ro' ? 'text-white' : 'text-black'
+          language === 'fil' ? 'text-white' : 'text-black'
         )}
       >
         {t('language.en')}
