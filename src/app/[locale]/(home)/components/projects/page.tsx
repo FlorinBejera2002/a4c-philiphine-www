@@ -29,7 +29,7 @@ export default function Projects() {
             {t('projects.section_title')}
           </h3>
           <h2 className="text-4xl font-bold text-gray-900 mt-2">
-            t{t('projects.heading')}{' '}
+            {t('projects.heading')}{' '}
             <span className="text-accent">{t('projects.highlight')}</span>
           </h2>
         </div>
