@@ -43,12 +43,12 @@ export default function Home() {
             backgroundBlendMode: 'overlay'
           }}
         >
-          <div className="p-6 rounded-lg flex flex-col md:flex-row w-full md:px-52 items-center pt-40">
+          <div className="p-6 rounded-lg flex flex-col xl:flex-row w-full md:px-52 items-center pt-40">
             <div className="w-full flex flex-col gap-5">
               <QuestionList />
               <Socials />
             </div>
-            <div className="flex max-w-96 flex-col items-center justify-center ">
+            <div className="flex xl:max-w-96 flex-col items-center justify-center ">
               <DailyVerse />
             </div>
           </div>

@@ -135,19 +135,28 @@ export default function Nav() {
               width={100}
             />
           </Link>
+          <div className="flex items-center justify-between">
+            <Link
+              className=" font-weight-semibold text-xs md:text-md min-w-fit rounded-md bg-accent p-1.5 md:p-3 text-white no-underline hover:!no-underline xl:hidden"
+              href={`/${language}/evangelism-request`}
+              type="button"
+            >
+              {t('form.title')}
+            </Link>
 
-          <MenuButton
-            className={cn(
-              '-mr-4 flex scale-50 cursor-pointer text-white xl:hidden'
-            )}
-            color="white"
-            height="24"
-            isOpen={mobileNavbarOpen}
-            onClick={() => setMobileNavbarOpen((prev) => !prev)}
-            strokeWidth="4"
-            transition={{ duration: 0.2, ease: 'easeOut' }}
-            width="64"
-          />
+            <MenuButton
+              className={cn(
+                '-mr-4 flex scale-50 cursor-pointer text-white xl:hidden'
+              )}
+              color="white"
+              height="24"
+              isOpen={mobileNavbarOpen}
+              onClick={() => setMobileNavbarOpen((prev) => !prev)}
+              strokeWidth="4"
+              transition={{ duration: 0.2, ease: 'easeOut' }}
+              width="64"
+            />
+          </div>
 
           <AnimatePresence initial={false} mode="popLayout">
             {mobileNavbarOpen && (
